@@ -7,5 +7,7 @@ import java.util.*
 
 @Repository
 interface InstituicaoRepository : JpaRepository<Instituicao, Long> {
+   fun findByIspb(ispb: Number): Optional<Instituicao>
+    //fun findByInstituicao(instituicaoModel: Instituicao): Optional<Instituicao>
     //fun findByInstituicao(instituicao: Instituicao): Optional<Instituicao>
 }

@@ -4,7 +4,7 @@ import br.com.zup.model.Instituicao
 
 data class InstituicaoFeing(
     val nome: String,
-    val ispb: Number
+    val ispb: Integer
 ) {
 
     fun toModel(): Instituicao {

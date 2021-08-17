@@ -7,7 +7,7 @@ import javax.persistence.Id
 @Entity
 data class Instituicao(
     val nome: String,
-    val ispb: Number
+    val ispb: Integer
 ) {
 
     @Id

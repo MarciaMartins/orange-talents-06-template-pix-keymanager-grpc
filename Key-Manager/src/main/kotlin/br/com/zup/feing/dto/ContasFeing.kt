@@ -7,8 +7,8 @@ import br.com.zup.model.Titular
 data class ContasFeing(
     val tipo: String,
     val instituicao: InstituicaoFeing,
-    val agencia: Number,
-    val numero: Number,
+    val agencia: Integer,
+    val numero: Integer,
     val titular: TitularFeing
 ) {
     fun toModel(titularModel: Titular, instituicaoModel: Instituicao): Conta {

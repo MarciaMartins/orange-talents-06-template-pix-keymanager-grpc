@@ -8,4 +8,6 @@ import java.util.*
 @Repository
 interface TitularRepository : JpaRepository<Titular, Long> {
     //fun findByTitular(titular: Titular): Optional<Titular>
+    fun findByCpf(cpf: String): Optional<Titular>
+    //fun findByTitular(titular: Titular): Optional<Titular>
 }
